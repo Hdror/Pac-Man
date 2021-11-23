@@ -1,0 +1,116 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+table {
+  display: flex;
+  justify-content: space-around;
+}
+
+tbody {
+  border-radius: 10px;
+  background-color: rgba(197, 144, 65, 0.884);
+
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  font-size: 2em;
+  transition: 1s;
+  box-sizing: border-box;
+}
+
+.cell .wall {
+  /* padding: 0px 20px; */
+  height: 50px;
+  width: 50px;
+  border-radius: 6px;
+  background-color: rgb(34, 85, 180);
+  box-sizing: border-box;
+  border: 2px solid rgb(8, 7, 7);
+}
+
+.pacman-food {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.842);
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: inset 4px -4px 5px rgba(0, 0, 0, .5);
+}
+
+.super-food {
+  width: 25px;
+  height: 25px;
+  background: rgb(145, 51, 233);
+  border-radius: 70px;
+  margin: auto;
+  box-shadow: inset 4px -4px 3px rgba(44, 40, 104, 0.966);
+  animation: jump 1.2s infinite;
+}
+
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(3px);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal {
+  margin-top: 20px;
+  display: none;
+  flex-direction: column;
+  padding: auto;
+  text-align: center;
+  font-size: x-large;
+  align-items: center;
+}
+
+.modal button {
+  margin-top: 20px;
+  border: 1px solid white;
+  width: 170px;
+  height: 35px;
+  cursor: pointer;
+  background-color: blueviolet;
+  border-radius: 15px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 20px;
+  letter-spacing: -1.6px;
+  word-spacing: 4.4px;
+  color: #000000;
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: 0px 0px 19px 0px white;
+  background-color: rgb(156, 80, 228);
+  animation: jump 2s 1;
+}
+
+
+
+/* .formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+} */
